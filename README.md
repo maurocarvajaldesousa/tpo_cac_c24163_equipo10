@@ -1,4 +1,4 @@
-# Repo de nuestro proyecto integrador CaC 2024 - Centro Salamone Saldungaray - Equipo #10
+# Repo de nuestro TPO CaC 2024 - Centro Salamone Saldungaray - Equipo #10
 
 ## Integrantes del equipo
 
