@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de usuarios - Centro Salamone Saldungaray</title>
+
+    <!-- ESTILOS y FUENTES -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d669232c7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- Puedes incluir el encabezado común aquí si lo deseas -->
+    </header>
+    <main>
+      <section class="register-section">
+        <h1>Registro de Usuario</h1>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" />
+          </div>
+          <div class="form-group">
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" />
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input
+              type="date"
+              id="fecha_nacimiento"
+              name="fecha_nacimiento"
+              required
+            />
+          </div>
+          <!-- Otros campos sugeridos -->
+          <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" />
+          </div>
+
+          <div class="form-group">
+            <label for="ubicacion">Ubicación:</label>
+            <select
+              id="ubicacion"
+              name="ubicacion"
+              placeholder="Ingrese su ubicación"
+              required
+            >
+              <option value="">Selecciona tu ubicación</option>
+              <option value="Buenos Aires">Buenos Aires</option>
+              <option value="Catamarca">Catamarca</option>
+              <option value="Chaco">Chaco</option>
+              <option value="Chubut">Chubut</option>
+              <option value="Córdoba">Córdoba</option>
+              <option value="Corrientes">Corrientes</option>
+              <option value="Entre Ríos">Entre Ríos</option>
+              <option value="Formosa">Formosa</option>
+              <option value="Jujuy">Jujuy</option>
+              <option value="La Pampa">La Pampa</option>
+              <option value="La Rioja">La Rioja</option>
+              <option value="Mendoza">Mendoza</option>
+              <option value="Misiones">Misiones</option>
+              <option value="Neuquén">Neuquén</option>
+              <option value="Río Negro">Río Negro</option>
+              <option value="Salta">Salta</option>
+              <option value="San Juan">San Juan</option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Cruz">Santa Cruz</option>
+              <option value="Santa Fe">Santa Fe</option>
+              <option value="Santiago del Estero">Santiago del Estero</option>
+              <option value="Tierra del Fuego">Tierra del Fuego</option>
+              <option value="Tucumán">Tucumán</option>
+              <option value="Ciudad Autónoma de Buenos Aires">
+                Ciudad Autónoma de Buenos Aires
+              </option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="intereses">Intereses:</label>
+            <textarea id="intereses" name="intereses"></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Registrarse</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>Este es el footer de la página principal</footer>
+  </body>
+</html>

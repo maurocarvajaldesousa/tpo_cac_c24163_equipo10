@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Salamone Saldungaray</title>
+
+    <!-- ESTILOS y FUENTES -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d669232c7f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div>
+        <!-- Header principal del sitio -->
+        <div id="logo">
+          <a href="/">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <!-- barra-busqueda -->
+        <div id="busqueda">
+          <input type="search" placeholder="Buscar obras" />
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li>
+            <div>
+              <a href="./pages/register.html">Creá tu cuenta</a>
+              <i class="fa-solid fa-id-card fa-sm"></i>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/login.html">Ingresá</a>
+              <i class="fa-solid fa-right-to-bracket fa-sm"></i>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/favs.html">Mis favoritos</a>
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- banner home -->
+      <div>
+        <img
+          src="https://fastly.picsum.photos/id/82/200/300.jpg?grayscale&hmac=dn_IlxF7IQ7Dl0ZnVLB0ax_dzNWGlpmVhg05fA7I5Yc"
+          alt="banner header"
+        />
+      </div>
+
+      <section>
+        <!-- listado de obras -->
+        <h1>Listado de obras</h1>
+
+        <!-- Tarjeta de obra 1 -->
+        <article class="obra-card">
+          <h2>Nombre de la obra 1</h2>
+
+          <img src="imagen_obra_1.jpg" alt="Preview de obra 1" />
+
+          <p>
+            Ubicación geográfica:
+            <a href="link_googlemaps_obra_1">ir a Google Maps</a>
+          </p>
+          <p>Año de inauguración: 20XX</p>
+          <a href="link_detalle_obra1" class="btn-ver-detalle"
+            >Ver detalle de obra</a
+          >
+        </article>
+
+        <!-- Repetir estas tarjetas para cada obra -->
+      </section>
+    </main>
+    <footer>Este es el footer de la página principal</footer>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+/* SELECTOR UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial;
+}
+
+/* Estilos para dispositivos móviles default (mobile-first)*/
+
+/* Estilos para dispositivos de pantalla pequeña */
+@media screen and (min-width: 576px) {
+  /* Agrega estilos específicos para dispositivos de pantalla pequeña */
+}
+
+/* Estilos para dispositivos de pantalla mediana */
+@media screen and (min-width: 768px) {
+  /* Agrega estilos específicos para dispositivos de pantalla mediana */
+}
+
+/* Estilos para dispositivos de pantalla grande */
+@media screen and (min-width: 992px) {
+  /* Agrega estilos específicos para dispositivos de pantalla grande */
+}
+
+/* Estilos para dispositivos de pantalla extra grande */
+@media screen and (min-width: 1200px) {
+  /* Agrega estilos específicos para dispositivos de pantalla extra grande */
+}
