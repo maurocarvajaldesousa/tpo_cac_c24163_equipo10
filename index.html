@@ -19,38 +19,42 @@
     ></script>
   </head>
   <body>
-    <header>
-      <div>
+    <header class="header">
+      <div class="header-logo">
         <!-- Header principal del sitio -->
-        <div id="logo">
-          <a href="/">
-            <img src="./img/logo.png" alt="logo" />
-          </a>
+        <div id="container-logo">
+          <!-- <a href="/">
+            <img class="logo-img" src="./img/logo.png" alt="logo" />
+          </a> -->
         </div>
         <!-- barra-busqueda -->
-        <div id="busqueda">
-          <input type="search" placeholder="Buscar obras" />
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div id="busqueda" class="buscador-container">
+          <input type="search" placeholder="Buscar obras" class="buscador" />
+          <a href="#"
+            ><i class="fa-solid fa-magnifying-glass icon-search"></i
+          ></a>
         </div>
       </div>
 
-      <nav>
-        <ul>
+      <nav class="header-nav">
+        <ul class="header-list">
           <li>
             <div>
-              <a href="./pages/register.html">Creá tu cuenta</a>
+              <a href="./pages/register.html" class="list-text"
+                >Creá tu cuenta</a
+              >
               <i class="fa-solid fa-id-card fa-sm"></i>
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/login.html">Ingresá</a>
+              <a href="./pages/login.html" class="list-text">Ingresá</a>
               <i class="fa-solid fa-right-to-bracket fa-sm"></i>
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/favs.html">Mis favoritos</a>
+              <a href="./pages/favs.html" class="list-text">Mis favoritos</a>
               <i class="fa-regular fa-bookmark"></i>
             </div>
           </li>
