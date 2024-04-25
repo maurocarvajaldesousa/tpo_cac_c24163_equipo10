@@ -6,10 +6,15 @@
   font-family: Montserrat, Arial;
 }
 
+body {
+  background-color: #1e1e1e;
+  color: aliceblue;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 10px 30px;
   align-items: center;
 }
 
@@ -19,8 +24,8 @@
 }
 
 .container-logo {
-  width: 130px;
-  height: 120px;
+  width: 90px;
+  height: 90px;
 }
 
 .logo-img {
@@ -30,6 +35,7 @@
 
 .buscador-container {
   position: relative;
+  margin-left: 15px;
 }
 
 .icon-search {
@@ -65,21 +71,24 @@
 }
 
 .list-text {
-  color: black;
+  color: rgb(216, 215, 215);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .banner {
   display: flex;
   width: 100vw;
+  background-color: #fbf8dd;
 }
 
 .banner-img {
   background-image: url("../img/banner.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 50vw;
+  background-position: center;
+  width: 70vw;
   height: 400px;
   opacity: 0.9;
 }
@@ -87,14 +96,16 @@
 .banner-title {
   font-size: 2.5rem;
   color: black;
-  font-weight: 600;
+  font-weight: 700;
   font-family: Montserrat;
   /* margin: 10px; */
 }
 
 .banner-items {
   /* display: flex; */
-  margin: 0 auto;
+  margin: auto;
+  width: 30vw;
+  text-align: center;
 }
 
 .banner-btn {
@@ -102,11 +113,12 @@
   padding: 10px;
   border-radius: 15px;
   width: 150px;
-  margin: 15px 0;
-  border-color: aliceblue;
+  margin: 30px 0;
   outline: none;
   font-weight: bold;
   outline: none;
+  background-color: #1e1e1e;
+  color: #fbf8dd;
 }
 /* .banner-img {
   width: 100%;

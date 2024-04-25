@@ -7,10 +7,16 @@
 
     <!-- ESTILOS y FUENTES -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <script
@@ -38,22 +44,26 @@
         <ul class="header-list">
           <li>
             <div>
-              <a href="./pages/register.html" class="list-text"
-                >Creá tu cuenta</a
-              >
-              <i class="fa-solid fa-id-card fa-sm"></i>
+              <a href="./pages/register.html" class="list-text">Biografía</a>
+              <!-- <i class="fa-solid fa-id-card fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/login.html" class="list-text">Ingresá</a>
-              <i class="fa-solid fa-right-to-bracket fa-sm"></i>
+              <a href="./pages/login.html" class="list-text">Libros</a>
+              <!-- <i class="fa-solid fa-right-to-bracket fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/favs.html" class="list-text">Mis favoritos</a>
-              <i class="fa-regular fa-bookmark"></i>
+              <a href="./pages/favs.html" class="list-text">Obras</a>
+              <!-- <i class="fa-regular fa-bookmark"></i> -->
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/favs.html" class="list-text">Contáctanos</a>
+              <!-- <i class="fa-regular fa-bookmark"></i> -->
             </div>
           </li>
         </ul>
@@ -62,40 +72,41 @@
 
     <main>
       <!-- banner home -->
-      <div>
+      <div class="main-conatiner">
+        <!-- banner home -->
         <div class="banner">
           <div class="banner-img"></div>
           <div class="banner-items">
             <p class="banner-title">Centro de interpretación</p>
-            <button class="banner-btn">Saber más</button>
+            <button class="banner-btn">Más información</button>
           </div>
         </div>
+
+        <section>
+          <!-- listado de obras -->
+          <h1>Listado de obras</h1>
+
+          <!-- Tarjeta de obra 1 -->
+          <article class="obra-card">
+            <h2>Nombre de la obra 1</h2>
+
+            <img src="imagen_obra_1.jpg" alt="Preview de obra 1" />
+
+            <p>
+              Ubicación geográfica:
+              <a href="link_googlemaps_obra_1">ir a Google Maps</a>
+            </p>
+            <p>Año de inauguración: 20XX</p>
+            <a href="link_detalle_obra1" class="btn-ver-detalle"
+              >Ver detalle de obra</a
+            >
+
+            <!-- <a href="./hola.pdf" download class="btn btn-primary">Descargar libro</a> -->
+          </article>
+
+          <!-- Repetir estas tarjetas para cada obra -->
+        </section>
       </div>
-
-      <section>
-        <!-- listado de obras -->
-        <h1>Listado de obras</h1>
-
-        <!-- Tarjeta de obra 1 -->
-        <article class="obra-card">
-          <h2>Nombre de la obra 1</h2>
-
-          <img src="imagen_obra_1.jpg" alt="Preview de obra 1" />
-
-          <p>
-            Ubicación geográfica:
-            <a href="link_googlemaps_obra_1">ir a Google Maps</a>
-          </p>
-          <p>Año de inauguración: 20XX</p>
-          <a href="link_detalle_obra1" class="btn-ver-detalle"
-            >Ver detalle de obra</a
-          >
-
-          <!-- <a href="./hola.pdf" download class="btn btn-primary">Descargar libro</a> -->
-        </article>
-
-        <!-- Repetir estas tarjetas para cada obra -->
-      </section>
     </main>
     <footer>Este es el footer de la página principal</footer>
   </body>
