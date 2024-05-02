@@ -1,3 +1,8 @@
+/* :root {
+  --color-primary: (#fbf8dd);
+  --color-secondary: (#1e1e1e);
+} */
+
 /* SELECTOR UNIVERSAL */
 * {
   margin: 0;
@@ -8,7 +13,6 @@
 
 body {
   background-color: #1e1e1e;
-  color: aliceblue;
 }
 
 .header {
@@ -120,10 +124,43 @@ body {
   background-color: #1e1e1e;
   color: #fbf8dd;
 }
-/* .banner-img {
+
+.section-obras {
+  padding: 40px 20px;
+}
+
+.title-obra,
+.subtitle-obra {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+  /* color: var(--color-primary); */
+  font-weight: 700;
+}
+
+.subtitle-obra {
+  font-family: "Enriqueta", serif;
+  font-weight: 400;
+}
+
+.contenedor-obras {
+  padding: 2rem;
+}
+
+.obras {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.obra-map {
+  width: 350px;
+}
+
+.img-map {
   width: 100%;
-  height: 400px;
-} */
+}
 
 /* Estilos para dispositivos móviles default (mobile-first)*/
 
