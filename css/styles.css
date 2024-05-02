@@ -1,7 +1,7 @@
-/* :root {
-  --color-primary: (#fbf8dd);
-  --color-secondary: (#1e1e1e);
-} */
+:root {
+  --color-primary: #fbf8dd;
+  --color-secondary: #1e1e1e;
+}
 
 /* SELECTOR UNIVERSAL */
 * {
@@ -11,6 +11,10 @@
   font-family: Montserrat, Arial;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #1e1e1e;
 }
@@ -18,7 +22,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 25px 30px;
   align-items: center;
 }
 
@@ -93,7 +97,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   width: 70vw;
-  height: 400px;
+  height: 500px;
   opacity: 0.9;
 }
 
@@ -134,7 +138,7 @@ body {
   text-align: center;
   margin-bottom: 10px;
   font-size: 2.5rem;
-  /* color: var(--color-primary); */
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -155,11 +159,63 @@ body {
 }
 
 .obra-map {
-  width: 350px;
+  width: 400px;
 }
 
 .img-map {
   width: 100%;
+}
+
+/*Estilos para la biografía"*/
+
+.section-bio {
+  background-color: var(--color-primary);
+  padding: 40px 0;
+
+  .title-bio {
+    font-size: 2.5rem;
+    font-family: Montserrat;
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .container-bio {
+    display: flex;
+  }
+
+  .side-autor {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  .img-francisco {
+    display: block;
+    border-radius: 50%;
+    margin-inline: auto;
+  }
+
+  .side-bio {
+    width: 100%;
+  }
+  .autor-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .ocupacion-title {
+    font-size: 1rem;
+    margin-bottom: 50px;
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .container-parrafo {
+    padding-right: 50px;
+  }
+
+  .parrafo {
+    margin-bottom: 15px;
+  }
 }
 
 /* Estilos para dispositivos móviles default (mobile-first)*/
