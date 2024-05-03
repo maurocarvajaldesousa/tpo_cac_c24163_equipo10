@@ -19,6 +19,12 @@ body {
   background-color: #1e1e1e;
 }
 
+.contenedor {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-block: 1px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -218,6 +224,65 @@ body {
   }
 }
 
+.title-libro {
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 80px;
+}
+
+.subtitle-libro {
+  color: var(--color-primary);
+  font-family: "Enriqueta", serif;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 65px;
+}
+
+.contenedor-libro {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  width: 100%;
+}
+
+.side-descarga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.btn-descarga {
+  background-color: var(--color-primary);
+  font-size: 2.5 rem;
+  padding: 20px;
+  border-radius: 15px;
+  width: 230px;
+  margin: 30px 0;
+  outline: none;
+  font-weight: bold;
+  outline: none;
+  color: #1e1e1e;
+}
+
+.parrafo-libro {
+  color: var(--color-primary);
+  line-height: 30px;
+  max-width: 42ch;
+}
+
+.contenedor-img-libro {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.img-libro {
+  width: 100%;
+  border-radius: 15px;
+}
 /* Estilos para dispositivos móviles default (mobile-first)*/
 
 /* Estilos para dispositivos de pantalla pequeña */
