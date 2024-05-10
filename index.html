@@ -7,12 +7,6 @@
 
     <!-- ESTILOS y FUENTES -->
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,44 +19,37 @@
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header contenedor" id="header">
       <div class="header-logo">
         <!-- Header principal del sitio -->
         <div class="container-logo">
           <img class="logo-img" src="./img/logo.jpeg" alt="logo" />
         </div>
-        <!-- barra-busqueda -->
-        <!-- <div id="busqueda" class="buscador-container">
-          <input type="search" placeholder="Buscar obras" class="buscador" />
-          <a href="#"
-            ><i class="fa-solid fa-magnifying-glass icon-search"></i
-          ></a>
-        </div> -->
       </div>
 
       <nav class="header-nav">
         <ul class="header-list">
           <li>
             <div>
-              <a href="./pages/register.html" class="list-text">Biografía</a>
+              <a href="#section-bio" class="list-text">Biografía</a>
               <!-- <i class="fa-solid fa-id-card fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/login.html" class="list-text">Libros</a>
+              <a href="#section-libro" class="list-text">Libros</a>
               <!-- <i class="fa-solid fa-right-to-bracket fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/favs.html" class="list-text">Obras</a>
+              <a href="#section-obras" class="list-text">Obras</a>
               <!-- <i class="fa-regular fa-bookmark"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/favs.html" class="list-text">Contáctanos</a>
+              <a href="./pages/register.html" target="_blank" class="list-text">Contáctanos</a>
               <!-- <i class="fa-regular fa-bookmark"></i> -->
             </div>
           </li>
@@ -74,15 +61,24 @@
       <!-- banner home -->
       <div class="main-conatiner">
         <!-- banner home -->
-        <div class="banner">
+        <div class="banner" >
           <div class="banner-img"></div>
           <div class="banner-items">
             <p class="banner-title">Centro de interpretación</p>
-            <button class="banner-btn">Más información</button>
+            <div class="wrapper">
+              <!-- class="banner-btn" -->
+              <button class="banner-btn">
+                Más información
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
         </div>
 
-        <section class="section-obras">
+        <section class="section-obras" id="section-obras">
           <!-- listado de obras -->
           <h2 class="title-obra">Súmergete en el Mundo de Salamone</h2>
           <h3 class="subtitle-obra">Visita sus Impresionantes Creaciones</h3>
@@ -114,7 +110,7 @@
             </div>
           </div>
         </section>
-        <section class="section-bio">
+        <section class="section-bio" id="section-bio">
           <div class="contenedor">
             <h2 class="title-bio">Biografía</h2>
             <div class="container-bio">
@@ -165,7 +161,7 @@
             </div>
           </div>
         </section>
-        <section class="section-libro">
+        <section class="section-libro" id="section-libro">
           <div class="contenedor">
             <h2 class="title-libro">
               Descubre el Legado de Francisco Salamone:
@@ -191,6 +187,62 @@
         </section>
       </div>
     </main>
-    <footer>Este es el footer de la página principal</footer>
+    <footer class="footer">
+      <div class="container-footer contenedor">
+        <div class="social-media">
+          <div class="container-img-footer"><img src="./img/logo.jpeg" alt="logo" /></li></div>
+          <ul class="items-social-media">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-linkedin"
+                 
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-square-x-twitter"
+                  
+                 
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-contact">
+          <ul class="items-nav">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#section-obras">Obras</a></li>
+            <li><a href="./pages/register.html" target="_blank">Contacto</a></li>
+          </ul>
+          <ul class="items-contacto">
+            <li>
+              <a href=""></a><i class="fa-solid fa-envelope fa-bounce"></i>
+              centrosalamone@gmail.con
+            </li>
+            <li><a href=""></a>Politicas de privacidad</li>
+            <li><a href=""></a>Copyright 2024</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
