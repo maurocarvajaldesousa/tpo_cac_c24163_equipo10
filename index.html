@@ -7,30 +7,25 @@
 
     <!-- ESTILOS y FUENTES -->
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style-tablet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    
     <script
       src="https://kit.fontawesome.com/d669232c7f.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header class="header">
+    <header class="header contenedor" id="header">
       <div class="header-logo">
         <!-- Header principal del sitio -->
         <div class="container-logo">
           <img class="logo-img" src="./img/logo.jpeg" alt="logo" />
-        </div>
-        <!-- barra-busqueda -->
-        <div id="busqueda" class="buscador-container">
-          <input type="search" placeholder="Buscar obras" class="buscador" />
-          <a href="#"
-            ><i class="fa-solid fa-magnifying-glass icon-search"></i
-          ></a>
         </div>
       </div>
 
@@ -38,22 +33,26 @@
         <ul class="header-list">
           <li>
             <div>
-              <a href="./pages/register.html" class="list-text"
-                >Creá tu cuenta</a
-              >
-              <i class="fa-solid fa-id-card fa-sm"></i>
+              <a href="#section-bio" class="list-text">Biografía</a>
+              <!-- <i class="fa-solid fa-id-card fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/login.html" class="list-text">Ingresá</a>
-              <i class="fa-solid fa-right-to-bracket fa-sm"></i>
+              <a href="#section-libro" class="list-text">Libros</a>
+              <!-- <i class="fa-solid fa-right-to-bracket fa-sm"></i> -->
             </div>
           </li>
           <li>
             <div>
-              <a href="./pages/favs.html" class="list-text">Mis favoritos</a>
-              <i class="fa-regular fa-bookmark"></i>
+              <a href="#section-obras" class="list-text">Obras</a>
+              <!-- <i class="fa-regular fa-bookmark"></i> -->
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/register.html" target="_blank" class="list-text">Contáctanos</a>
+              <!-- <i class="fa-regular fa-bookmark"></i> -->
             </div>
           </li>
         </ul>
@@ -62,41 +61,191 @@
 
     <main>
       <!-- banner home -->
-      <div>
-        <div class="banner">
+      <div class="main-conatiner">
+        <!-- banner home -->
+        <div class="banner" >
           <div class="banner-img"></div>
           <div class="banner-items">
             <p class="banner-title">Centro de interpretación</p>
-            <button class="banner-btn">Saber más</button>
+            <div class="wrapper">
+              <!-- class="banner-btn" -->
+              <button class="banner-btn">
+                Más información
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
           </div>
         </div>
+
+        <section class="section-obras" id="section-obras">
+          <!-- listado de obras -->
+          <h2 class="title-obra">Súmergete en el Mundo de Salamone</h2>
+          <h3 class="subtitle-obra">Visita sus Impresionantes Creaciones</h3>
+
+          <div class="contenedor-obras">
+            <div class="obras obras-top">
+              <div class="obra-map">
+                <a href="/"
+                  ><img src="./img/rutas-sur.png" alt="" class="img-map"
+                /></a>
+              </div>
+              <div class="obra-map">
+                <a href="/"
+                  ><img src="./img/rutas-oeste.png" alt="" class="img-map"
+                /></a>
+              </div>
+            </div>
+            <div class="obras obras-bottom">
+              <div class="obra-map">
+                <a href="/"
+                  ><img src="./img/rutas-norte.png" alt="" class="img-map"
+                /></a>
+              </div>
+              <div class="obra-map">
+                <a href="/"
+                  ><img src="./img/rutas-centro.png" alt="" class="img-map"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-bio" id="section-bio">
+          <div class="contenedor">
+            <h2 class="title-bio">Biografía</h2>
+            <div class="container-bio">
+              <div class="side-autor">
+                <img
+                  src="./img/franciso_salamone.jpg"
+                  alt="img-francisco-salamone"
+                  class="img-francisco"
+                />
+              </div>
+              <div class="side-bio">
+                <h2 class="autor-title">Francisco Salamone</h2>
+                <h2 class="ocupacion-title">Arquitecto / Ingeniero Civil</h2>
+                <div class="container-parrafo">
+                  <p class="parrafo">
+                    Nació el 5 de Junio de 1897 en Leonforte, Sicilia. A
+                    temprana edad su familia se instala en la ciudad de Buenos
+                    Aires. Cursa sus estudios secundarios en el colegio Otto
+                    Krausse graduándose de maestro mayor de obras. En 1920 se
+                    recibe de Arquitecto e Ingeniero Civil en la Universidad de
+                    Córdoba. Sus primeras obras fueron realizadas en localidades
+                    como Villa María (matadero y Plaza Centenario, entre otras)
+                    y Las Varillas (municipalidad), en la provincia de Córdoba.
+                  </p>
+                  <p class="parrafo">
+                    En la década del '30 durante el gobierno del Dr. Manuel
+                    Fresco, se le encomendó la realización de obras en más de 17
+                    municipios de la provincia de Buenos Aires, destinadas a
+                    palacios municipales, delegaciones, luminarias, bancos,
+                    mástiles, fuentes, mataderos, mercados y cementerios.
+                  </p>
+                  <p class="parrafo">
+                    Su obra se caracterizó por ser de estilo Art Decó, aunque
+                    poseía vestigios vanguardistas, del cubismo y post
+                    modernismo.
+                  </p>
+                  <p class="parrafo">
+                    En el partido de Tornquist se fundaron, el 15 de octubre de
+                    1938, 9 obras de las cuales 5 fueron hechas en Saldungaray
+                    convirtiéndose así, en el distrito y la localidad con mayor
+                    cantidad de obras realizadas por el Ingeniero arquitecto.
+                    Fallece el 8 de agosto de 1959 a los 62 años de edad dejando
+                    un vasto legado arquitectónico principalmente en las
+                    provincias de Buenos Aires y Córdoba.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </section>
+        <section class="section-libro" id="section-libro">
+          <div class="contenedor">
+            <h2 class="title-libro">
+              Descubre el Legado de Francisco Salamone:
+            </h2>
+            <h3 class="subtitle-libro">
+              Un Libro Ilustrado de Obras Monumentales
+            </h3>
+            <div class="contenedor-libro">
+              <div class="side-descarga">
+                <p class="parrafo-libro">
+                  Obtenga más información sobre los secretos detrás de la
+                  creación de una infraestructura asombrosa
+                </p>
+                <button class="btn-descarga">Descargar</button>
+              </div>
+              <div class="side-img">
+                <div class="contenedor-img-libro">
+                  <img src="./img/img-libro.jpg" alt="" class="img-libro" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-
-      <section>
-        <!-- listado de obras -->
-        <h1>Listado de obras</h1>
-
-        <!-- Tarjeta de obra 1 -->
-        <article class="obra-card">
-          <h2>Nombre de la obra 1</h2>
-
-          <img src="imagen_obra_1.jpg" alt="Preview de obra 1" />
-
-          <p>
-            Ubicación geográfica:
-            <a href="link_googlemaps_obra_1">ir a Google Maps</a>
-          </p>
-          <p>Año de inauguración: 20XX</p>
-          <a href="link_detalle_obra1" class="btn-ver-detalle"
-            >Ver detalle de obra</a
-          >
-
-          <!-- <a href="./hola.pdf" download class="btn btn-primary">Descargar libro</a> -->
-        </article>
-
-        <!-- Repetir estas tarjetas para cada obra -->
-      </section>
     </main>
-    <footer>Este es el footer de la página principal</footer>
+    <footer class="footer">
+      <div class="container-footer contenedor">
+        <div class="social-media">
+          <div class="container-img-footer"><img src="./img/logo.jpeg" alt="logo" /></li></div>
+          <ul class="items-social-media">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-linkedin"
+                 
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-square-x-twitter"
+                  
+                 
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-contact">
+          <ul class="items-nav">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#section-obras">Obras</a></li>
+            <li><a href="./pages/register.html" target="_blank">Contacto</a></li>
+          </ul>
+          <ul class="items-contacto">
+            <li>
+              <a href=""></a><i class="fa-solid fa-envelope fa-bounce"></i>
+              centrosalamone@gmail.con
+            </li>
+            <li><a href=""></a>Politicas de privacidad</li>
+            <li><a href=""></a>Copyright 2024</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

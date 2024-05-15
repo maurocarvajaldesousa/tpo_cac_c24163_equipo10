@@ -1,0 +1,9 @@
+/* Estilos para dispositivos de pantalla grande */
+@media screen and (min-width: 992px) {
+  /* Agrega estilos específicos para dispositivos de pantalla grande */
+}
+
+/* Estilos para dispositivos de pantalla extra grande */
+@media screen and (min-width: 1200px) {
+  /* Agrega estilos específicos para dispositivos de pantalla extra grande */
+}
