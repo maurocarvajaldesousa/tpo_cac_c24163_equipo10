@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "nombre": "Cementerio de Saldungaray",
+    "date": "1938",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_01.png",
+    "ubicacion": "sur",
+    "coordenadas": "https://maps.app.goo.gl/ACfZ52YgRNcAsrTE6"
+  },
+  {
+    "id": "2",
+    "nombre": "Municipalidad de Tornquist",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_02.png",
+    "ubicacion": "sur",
+    "coordenadas": "https://maps.app.goo.gl/m4wGekTZRnbH9CcP9"
+  },
+  {
+    "id": "3",
+    "nombre": "Matadero de Adolfo Alsina (Carhué)",
+    "date": "1938",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_03.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/QrPzLmUz63TAfiK9A"
+  },
+  {
+    "id": "4",
+    "nombre": "Cruz de Adolfo Alsina (Arano)",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_04.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/5ETgXh8cYx1Fvvux6"
+  },
+  {
+    "id": "5",
+    "nombre": "Matadero de Villa Epecuen",
+    "date": "1938",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_05.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/KF1NenFeo6L3XEjQ9"
+  },
+  {
+    "id": "6",
+    "nombre": "Cruz de Villa Epecuén",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_06.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/YgBdC3FDYrqcfLMz6"
+  },
+  {
+    "id": "7",
+    "nombre": "Matadero de Guaminí",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_07.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/7XjdjF4WL3r4hR2AA"
+  },
+  {
+    "id": "8",
+    "nombre": "Municipalidad de Guaminí",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_08.png",
+    "ubicacion": "oeste",
+    "coordenadas": "https://maps.app.goo.gl/6kPnCHKiGs4FUAg77"
+  },
+  {
+    "id": "9",
+    "nombre": "Cementerio de Azul",
+    "date": "1938",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_09.png",
+    "ubicacion": "centro",
+    "coordenadas": "https://maps.app.goo.gl/ccHhBgXSPfaXVtPE9"
+  },
+  {
+    "id": "10",
+    "nombre": "Municipalidad de Alberti",
+    "date": "1937",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_10.png",
+    "ubicacion": "norte",
+    "coordenadas": "https://maps.app.goo.gl/EmT3GmGWntTAQiYJ7"
+  },
+  {
+    "id": "11",
+    "nombre": "Municipalidad de Adolfo Gonzales Chaves",
+    "date": "1939",
+    "imagen": "tpo_cac/tpo_cac_c24163_equipo10/img/obras/obra_11.png",
+    "ubicacion": "centro",
+    "coordenadas": "https://maps.app.goo.gl/KYt6ShrDuUfmLqYJA"
+  }
+]
