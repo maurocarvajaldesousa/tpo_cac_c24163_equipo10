@@ -1,0 +1,92 @@
+/* Estilos para dispositivos de pantalla mediana */
+@media (min-width: 820px) and (max-width: 1280px) {
+  .banner-img {
+    background-image: url(../img/banner-tablet.png);
+    width: 62vw;
+    height: 400px;
+  }
+
+  .banner-items {
+    margin: 100px auto 0;
+  }
+
+  .banner-title {
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    top: 37%;
+    left: 82%;
+  }
+
+  .section-obras {
+    padding: 75px 20px;
+  }
+
+  .title-obra,
+  .subtitle-obra {
+    font-size: 2rem;
+  }
+
+  .obra-map {
+    width: 320px;
+  }
+
+  .section-bio {
+    padding: 20px 0;
+
+    .title-bio {
+      margin-bottom: 0px;
+    }
+
+    .container-bio {
+      display: block;
+      margin: 0 3rem;
+    }
+
+    .side-autor {
+      width: 35%;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+
+    .side-bio {
+      text-align: justify;
+    }
+
+    .autor-title {
+      text-align: center;
+    }
+
+    .ocupacion-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container-parrafo {
+      width: 90%;
+      margin: auto;
+      padding: 0px;
+    }
+  }
+
+  .title-libro {
+    font-size: 2rem;
+    margin-top: 60px;
+  }
+
+  .subtitle-libro {
+    font-size: 2rem;
+    margin-bottom: 60px;
+  }
+
+  .contenedor-libro {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .parrafo-libro {
+    text-align: center;
+  }
+}

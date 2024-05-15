@@ -76,14 +76,15 @@ body {
   font-size: 1rem;
 }
 
+.header-list li a {
+  list-style: none;
+  color: var(--color-primary);
+  padding-bottom: 3px;
+}
+
 .header-list li a:hover {
   padding-bottom: 4px;
   border-bottom: 2px solid var(--color-primary);
-}
-
-.header-list li {
-  list-style: none;
-  color: var(--color-primary);
 }
 
 .header-list li a {
@@ -316,10 +317,12 @@ body {
 
   .container-bio {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .side-autor {
-    width: 30%;
+    width: 40%;
     padding: 1rem;
   }
 
@@ -477,6 +480,12 @@ body {
   .items-nav li a {
     text-decoration: none;
     color: var(--color-secondary);
+    padding-bottom: 3px;
+  }
+
+  .items-nav li a:hover {
+    border-bottom: solid 3px var(--color-secondary);
+    color: var(--color-secondary);
   }
 
   .items-contacto li {
@@ -486,24 +495,9 @@ body {
   }
 }
 
-/* Estilos para dispositivos móviles default (mobile-first)*/
-
 /* Estilos para dispositivos de pantalla pequeña */
-@media screen and (min-width: 576px) {
-  /* Agrega estilos específicos para dispositivos de pantalla pequeña */
-}
-
-/* Estilos para dispositivos de pantalla mediana */
-@media screen and (min-width: 768px) {
-  /* Agrega estilos específicos para dispositivos de pantalla mediana */
-}
-
-/* Estilos para dispositivos de pantalla grande */
-@media screen and (min-width: 992px) {
-  /* Agrega estilos específicos para dispositivos de pantalla grande */
-}
-
-/* Estilos para dispositivos de pantalla extra grande */
-@media screen and (min-width: 1200px) {
-  /* Agrega estilos específicos para dispositivos de pantalla extra grande */
+@media (min-width: 1280px) and (max-width: 1730px) {
+  .wrapper {
+    top: 72%;
+  }
 }
