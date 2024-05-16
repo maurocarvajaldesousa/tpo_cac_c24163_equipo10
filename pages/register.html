@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Registro de usuarios - Centro Salamone Saldungaray</title>
+    <title>Registro de usuario - Centro Salamone Saldungaray</title>
 
     <!-- ESTILOS y FUENTES -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,24 +19,79 @@
     ></script>
   </head>
   <body>
-    <header>
-      <!-- Puedes incluir el encabezado común aquí si lo deseas -->
+    <header class="header">
+      <div class="header-logo">
+        <!-- Header principal del sitio -->
+        <div class="container-logo">
+          <img class="logo-img" src="../img/logo.jpeg" alt="logo" />
+        </div>
+        <!-- barra-busqueda -->
+        <div id="busqueda" class="buscador-container">
+          <input type="search" placeholder="Buscar obras" class="buscador" />
+          <a href="#"
+            ><i class="fa-solid fa-magnifying-glass icon-search"></i
+          ></a>
+        </div>
+      </div>
+
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li>
+            <div>
+              <a href="./pages/register.html" class="list-text"
+                >Creá tu cuenta</a
+              >
+              <i class="fa-solid fa-id-card fa-sm"></i>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/login.html" class="list-text">Ingresá</a>
+              <i class="fa-solid fa-right-to-bracket fa-sm"></i>
+            </div>
+          </li>
+          <li>
+            <div>
+              <a href="./pages/favs.html" class="list-text">Mis favoritos</a>
+              <i class="fa-regular fa-bookmark"></i>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="register-section">
         <h1>Registro de Usuario</h1>
         <form action="#" method="POST">
           <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" />
+            <label for="nombre">¿Cuál es tu nombre?</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" />
+            <label for="apellido">¿Y tu apellido?</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Apellido"
+              required
+            />
           </div>
           <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" />
+            <label for="email">¿Cuál es tu correo electrónico?</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Escribe tu correo electrónico"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="fecha_nacimiento">Fecha de nacimiento:</label>
@@ -50,8 +104,13 @@
           </div>
           <!-- Otros campos sugeridos -->
           <div class="form-group">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" />
+            <label for="telefono">¿Cuál es tu whatsapp?</label>
+            <input
+              type="tel"
+              id="telefono"
+              name="telefono"
+              placeholder="+54 9 11 "
+            />
           </div>
 
           <div class="form-group">
@@ -64,6 +123,7 @@
             >
               <option value="">Selecciona tu ubicación</option>
               <option value="Buenos Aires">Buenos Aires</option>
+              <option value="CABA">CABA</option>
               <option value="Catamarca">Catamarca</option>
               <option value="Chaco">Chaco</option>
               <option value="Chubut">Chubut</option>
@@ -86,18 +146,41 @@
               <option value="Santiago del Estero">Santiago del Estero</option>
               <option value="Tierra del Fuego">Tierra del Fuego</option>
               <option value="Tucumán">Tucumán</option>
-              <option value="Ciudad Autónoma de Buenos Aires">
-                Ciudad Autónoma de Buenos Aires
-              </option>
             </select>
           </div>
 
           <div class="form-group">
             <label for="intereses">Intereses:</label>
-            <textarea id="intereses" name="intereses"></textarea>
+            <textarea
+              id="intereses"
+              name="intereses"
+              maxlength="50"
+              placeholder="Contanos sobre vos..."
+            ></textarea>
           </div>
+
+          <div>
+            <input
+              type="password1"
+              name="password1"
+              id="password1"
+              placeholder="Crea una contraseña"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="password2"
+              name="password2"
+              id="password2"
+              placeholder="Confirma la contraseña"
+              required
+            />
+          </div>
+
           <div class="form-group">
-            <button type="submit">Registrarse</button>
+            <button type="submit">Registrarte</button>
           </div>
         </form>
       </section>
