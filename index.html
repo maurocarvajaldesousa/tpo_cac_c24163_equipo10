@@ -79,7 +79,6 @@
             </div>
           </div>
         </div>
-
         <section class="section-obras" id="section-obras">
           <!-- listado de obras -->
           <h2 class="title-obra">Súmergete en el Mundo de Salamone</h2>
@@ -187,6 +186,91 @@
               </div>
             </div>
           </div>
+        </section>
+        <section class="section-contacto">
+          <div class="contenedor">
+          <h2 class="title-contacto">Contacto</h2>
+          <p class="subtitle-contacto">Si tiene alguna pregunta o deseas información, no dude en ponerse en contacto mediante el siguiente formulario</p>
+          <form action="#" method="POST" class="form-contacto">
+            <div class="form-group">
+              <label for="nombre" class="label-contact">Nombre</label>
+              <input type="text" id="nombre" name="nombre" class="input-contact" />
+            </div>
+            <div class="form-group">
+              <label for="apellido" class="label-contact">Apellido</label>
+              <input type="text" id="apellido" name="apellido" class="input-contact" />
+            </div>
+            <div class="form-group">
+              <label for="email"  class="label-contact">Correo electrónico</label>
+              <input type="email" id="email" name="email" class="input-contact"/>
+            </div>
+            <div class="container-fn-tl">
+              <div class="form-group group-fn" >
+                <label for="fecha_nacimiento"  class="label-contact">Fecha de nacimiento</label>
+                <input
+                  type="date"
+                  id="fecha_nacimiento"
+                  name="fecha_nacimiento"
+                  class="input-contact"
+                  required
+                />
+              </div>
+              <!-- Otros campos sugeridos -->
+              <div class="form-group group-tel">
+                <label for="telefono" class="label-contact">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="input-contact"/>
+              </div>
+            
+          </div>
+  
+            <div class="form-group">
+              <label for="ubicacion" class="label-contact">Ubicación</label>
+              <select
+                id="ubicacion"
+                name="ubicacion"
+                placeholder="Ingrese su ubicación"
+                required
+                class="input-contact"
+              >
+                <option value="">Selecciona tu ubicación</option>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Córdoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Ríos">Entre Ríos</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquén">Neuquén</option>
+                <option value="Río Negro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Santiago del Estero">Santiago del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucumán">Tucumán</option>
+                <option value="Ciudad Autónoma de Buenos Aires">
+                  Ciudad Autónoma de Buenos Aires
+                </option>
+              </select>
+            </div>
+  
+            <div class="form-group">
+              <label for="intereses" class="label-contact">Intereses</label>
+              <textarea id="intereses" name="intereses" class="input-contact"></textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-contact">Enviar</button>
+            </div>
+          </form>
+        </div>
         </section>
       </div>
     </main>
