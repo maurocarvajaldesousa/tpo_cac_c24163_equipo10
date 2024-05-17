@@ -31,14 +31,14 @@ Se interactuó con trabajadores del lugar que nos orientaron respecto qué infor
 - **Residentes Locales**: Habitantes de Saldungaray que buscan información sobre su patrimonio cultural y arquitectónico.
 - **Profesionales de la Arquitectura y Conservación**: Arquitectos, restauradores y especialistas en conservación del patrimonio.
 
-### Problemas que resuelve el proyecto :large_green_circle:  
+### Problemas que resuelve el proyecto ⚠️  
 
 - **Acceso a Información**: Proporciona una fuente centralizada y accesible de información detallada sobre las obras de Francisco Salamone en Saldungaray y en el resto de la provincia de Buenos Aires, identificando sus principales obras.
 - **Promoción Cultural**: Ayuda a difundir y promover el valor cultural y arquitectónico de las obras de Salamone a nivel local, nacional e internacional.
 - **Educación y Conciencia**: Fomenta el aprendizaje y la conciencia sobre la importancia de preservar el patrimonio arquitectónico.
 - **Desarrollo Turístico**: Facilita la planificación y el acceso a rutas turísticas y visitas guiadas, incentivando el turismo.
 
-### Beneficios para los usuarios :large_green_circle:  
+### Beneficios para los usuarios 🟢
 
 - **Información Detallada y Accesible**: Acceso a una base de datos con información histórica, fotografías, ubicaciones y descripciones detalladas de las obras de Salamone.
 - **Recursos Educativos**: Materiales educativos y recursos para estudiantes y académicos, incluyendo fotografías y literatura accesible.
