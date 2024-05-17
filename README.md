@@ -3,7 +3,7 @@
 ## Integrantes del equipo
 
 | **Apellido, Nombre** |
-| :----: |
+| -------------------- |
 | Sessa, Anabella |
 | Favara, Jésica |
 | Clabel, Diana |
