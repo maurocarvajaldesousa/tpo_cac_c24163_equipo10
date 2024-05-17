@@ -2,7 +2,7 @@
 
 ## Integrantes del equipo
 
-| *Apellido, Nombre* |
+| **Apellido, Nombre** |
 | :----: |
 | Sessa, Anabella |
 | Favara, Jésica |
@@ -10,7 +10,9 @@
 | Carvajal de Sousa, Mauro |
 
 ## Entregable
-Acceso a la página web del proyecto: [Centro Salamone Saldungaray](https://maurocarvajaldesousa.github.io/tpo_cac_c24163_equipo10/).
+**Acceso a la página web del proyecto:**
+<a href="https://maurocarvajaldesousa.github.io/tpo_cac_c24163_equipo10/" target="_blank">Centro Salamone Saldungaray</a>
+
 
 # Centro Salamone Saldungaray
 
