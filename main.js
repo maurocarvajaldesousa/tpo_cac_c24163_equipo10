@@ -90,13 +90,13 @@ async function mostrarObras(obras) {
 mostrarObras(dataObras());
 
 // filtros
-divSurEl.addEventListener("click", async () => {
-  const obras = await dataObras();
-  const obrasSur = obras.filter((obra) => {
-    obra.ubicacion === "sur";
-  });
+// divSurEl.addEventListener("click", async () => {
+//   const obras = await dataObras();
+//   const obrasSur = obras.filter((obra) => {
+//     obra.ubicacion === "sur";
+//   });
 
-  console.log(obrasSur);
+//   console.log(obrasSur);
 
-  createCard(obrasSur);
-});
+//   createCard(obrasSur);
+// });
