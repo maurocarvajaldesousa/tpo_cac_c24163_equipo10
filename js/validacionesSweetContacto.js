@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Swal.fire({
         icon: 'error',
         title: 'Error en el campo nombre',
-        text: 'El campo nombre debe contener únicamente letras.',
+        text: 'El campo nombre no puede estar vacío y debe contener únicamente letras.',
       });
       isValid = false;
     }
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
       Swal.fire({
         icon: 'error',
         title: 'Error en el campo apellido',
-        text: 'El campo apellido debe contener únicamente letras.',
+        text: 'El campo apellido no puede estar vacío y debe contener únicamente letras.',
       });
       isValid = false;
     }
