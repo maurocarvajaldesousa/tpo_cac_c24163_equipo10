@@ -1,65 +1,67 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('.form-contacto');
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.form-contacto');
 
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-        if (validateForm()) {
-            alert('Formulario enviado correctamente.');
-            // Aquí puedes agregar el código para enviar el formulario
-        }
-    });
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (validateForm()) {
+      alert('Formulario enviado correctamente.');
+      // CÃ³digo para enviar el formulario
+    }
+  });
 
-    function validateForm() {
-        let isValid = true;
+  function validateForm() {
+    let isValid = true;
 
-        // Validación de nombre
-        const nombre = document.getElementById('nombre').value.trim();
-        if (!/^[a-zA-Z\s]+$/.test(nombre)) {
-            alert('El nombre solo debe contener letras.');
-            isValid = false;
-        }
-
-        // Validación de apellido
-        const apellido = document.getElementById('apellido').value.trim();
-        if (!/^[a-zA-Z\s]+$/.test(apellido)) {
-            alert('El apellido solo debe contener letras.');
-            isValid = false;
-        }
-
-        // Validación de correo electrónico
-        const email = document.getElementById('email').value.trim();
-        if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-            alert('Por favor, introduce un correo electrónico válido.');
-            isValid = false;
-        }
-
-        // Validación de fecha de nacimiento
-        const fechaNacimiento = document.getElementById('fecha_nacimiento').value;
-        if (!isValidDate(fechaNacimiento)) {
-            alert('Por favor, introduce una fecha de nacimiento válida.');
-            isValid = false;
-        }
-
-        // Validación de teléfono
-        const telefono = document.getElementById('telefono').value.trim();
-        if (!/^\d{7,}$/.test(telefono)) {
-            alert('El teléfono debe contener solo números y tener al menos 7 dígitos.');
-            isValid = false;
-        }
-
-        // Validación de ubicación
-        const ubicacion = document.getElementById('ubicacion').value;
-        if (ubicacion === '') {
-            alert('Por favor, selecciona tu ubicación.');
-            isValid = false;
-        }
-
-        return isValid;
+    // ValidaciÃ³n de nombre
+    const nombre = document.getElementById('nombre').value.trim();
+    if (!/^[a-zA-Z\s]+$/.test(nombre)) {
+      alert('El campo nombre no debe estar vacÃ­o y debe contener letras.');
+      isValid = false;
     }
 
-    function isValidDate(dateString) {
-        const date = new Date(dateString);
-        const now = new Date();
-        return date instanceof Date && !isNaN(date) && date < now;
+    // ValidaciÃ³n de apellido
+    const apellido = document.getElementById('apellido').value.trim();
+    if (!/^[a-zA-Z\s]+$/.test(apellido)) {
+      alert('El campo apellido no debe estar vacÃ­o y debe contener letras.');
+      isValid = false;
     }
+
+    // ValidaciÃ³n de correo electrÃ³nico
+    const email = document.getElementById('email').value.trim();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      alert('Por favor introduce un correo electrÃ³nico vÃ¡lido.');
+      isValid = false;
+    }
+
+    // ValidaciÃ³n de fecha de nacimiento
+    const fechaNacimiento = document.getElementById('fecha_nacimiento').value;
+    if (!isValidDate(fechaNacimiento)) {
+      alert('Por favor, introduce una fecha de nacimiento vÃ¡lida.');
+      isValid = false;
+    }
+
+    // ValidaciÃ³n de telÃ©fono
+    const telefono = document.getElementById('telefono').value.trim();
+    if (!/^\d{7,}$/.test(telefono)) {
+      alert(
+        'El campo telÃ©fono debe contener solo nÃºmeros y tener al menos 7 dÃ­gitos.'
+      );
+      isValid = false;
+    }
+
+    // ValidaciÃ³n de ubicaciÃ³n
+    const ubicacion = document.getElementById('ubicacion').value;
+    if (ubicacion === '') {
+      alert('Por favor, selecciona tu ubicaciÃ³n.');
+      isValid = false;
+    }
+
+    return isValid;
+  }
+
+  function isValidDate(dateString) {
+    const date = new Date(dateString);
+    const now = new Date();
+    return date instanceof Date && !isNaN(date) && date < now;
+  }
 });
