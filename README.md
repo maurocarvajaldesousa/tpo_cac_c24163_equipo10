@@ -1,4 +1,7 @@
-# Repo de nuestro TPO CaC 2024 - Equipo #10 📃
+# Repo de nuestro TPO CaC 2024 - Equipo #04 📃
+
+⚠️ **(inicialmente teníamos asignado el número de grupo 10)**
+
 
 ## Integrantes del equipo :construction: 
 
