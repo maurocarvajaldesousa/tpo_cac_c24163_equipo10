@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial;
+}
+
+:root {
+  --color-primary: #fbf8dd;
+  --color-secondary: #1e1e1e;
+}
+
+body {
+  background-color: var(--color-secondary);
+}
+
+.header li a {
+  color: white;
+}
+
+.header li a:hover {
+  color: white;
+}
+
+.bg-banner {
+  background-image: url("../img/banner-datail.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* background-position-y: -380px; */
+  background-position-y: center;
+  background-size: cover;
+  object-fit: cover;
+  min-height: 40vh;
+}
+
+.bg-banner-cont-titles {
+  color: white;
+  margin: 30px 0 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-banner-title {
+  font-size: 2.5rem;
+  font-family: Montserrat, Arial;
+  margin: 10px;
+}
+
+.bg-banner-parrafo {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+.container-buscador {
+  width: 100%;
+}
+
+.form-buscador {
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+  gap: 10px;
+}
+
+.box-buscador {
+  position: relative;
+}
+
+.input-buscador {
+  border-radius: 8px;
+  padding: 8px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+
+.icon-buscador {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: #1e1e1e;
+}
+
+.btn-buscador {
+  width: 150px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #97c8cf;
+  color: black;
+  font-weight: 600;
+}
+
+/* Estilo para la card */
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 20px;
+  margin-inline: auto;
+  justify-items: center;
+}
+
+.obra-card {
+  width: 400px;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+.img-obra-card {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.description-card {
+  width: 100%;
+  background-color: antiquewhite;
+  border-radius: 0 0 10px 10px;
+  padding: 15px;
+}
+
+.title-card {
+  font-family: Montserrat, Arial;
+  text-align: center;
+}
+
+.group-description {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.fa-solid {
+  padding-right: 10px;
+}
+
+.prop-card {
+  /* width: 55%; */
+  font-weight: 600;
+}
+/* .value-card {
+  width: 45%;
+} */
+
+/* .ctn-btn-card {
+  width: 100%;
+} */
+
+.btn-card {
+  margin-top: 10px;
+  width: 180px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  color: var(--color-primary);
+  display: block;
+  margin: 15px auto;
+}
