@@ -5,7 +5,7 @@ const divNorteEl = document.querySelector("#norte");
 const divCentroEl = document.querySelector("#centro");
 
 async function dataObras() {
-  const response = await fetch("/data/data.json");
+  const response = await fetch("/data.json");
   const obras = await response.json();
 
   return obras;
