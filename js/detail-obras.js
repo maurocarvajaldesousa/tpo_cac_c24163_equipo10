@@ -1,11 +1,36 @@
+async function main() {
+  const obras = await dataObras();
+  const url = new URL(location.href);
+  const ubicacion = url.searchParams.get("ubicacion");
+  const query = url.searchParams.get("q");
+  console.log(query);
+
+  if (query) {
+    const filterObras = obras.filter((obra) => {
+      return (
+        obra.nombre.toLowerCase().includes(query.toLowerCase()) ||
+        obra.ubicacion.includes(query.toLowerCase())
+      );
+    });
+
+    mostrarObras(filterObras);
+  } else if (ubicacion) {
+    const filterObras = obras.filter((obra) => {
+      return obra.ubicacion === ubicacion;
+    });
+
+    mostrarObras(filterObras);
+  } else {
+    mostrarObras(obras);
+  }
+}
+
+main();
+
 const contCardEl = document.querySelector("#contenedor-cards");
-const divSurEl = document.querySelector("#sur");
-const divOesteEl = document.querySelector("#oeste");
-const divNorteEl = document.querySelector("#norte");
-const divCentroEl = document.querySelector("#centro");
 
 async function dataObras() {
-  const response = await fetch("/data/data.json");
+  const response = await fetch("/data/obras.json");
   const obras = await response.json();
 
   return obras;
@@ -79,24 +104,10 @@ function createCard(obra) {
   contCardEl.appendChild(artEl);
 }
 
-async function mostrarObras(obras) {
-  const arrObras = await obras;
+function mostrarObras(obras) {
+  const arrObras = obras;
   console.log(arrObras);
   arrObras.forEach((obra) => {
     createCard(obra);
   });
 }
-
-mostrarObras(dataObras());
-
-// filtros
-// divSurEl.addEventListener("click", async () => {
-//   const obras = await dataObras();
-//   const obrasSur = obras.filter((obra) => {
-//     obra.ubicacion === "sur";
-//   });
-
-//   console.log(obrasSur);
-
-//   createCard(obrasSur);
-// });

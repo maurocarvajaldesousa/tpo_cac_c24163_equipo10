@@ -296,7 +296,12 @@ body {
 }
 
 .obra-map {
+  position: relative;
   width: 400px;
+}
+
+.obra-map:hover {
+  filter: grayscale(0.8);
 }
 
 .img-map {

@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/style-tablet.css" />
+    <link rel="stylesheet" href="./css/style-mobile.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,7 +81,12 @@
       <div class="container-buscador">
         <form action="" class="form-buscador">
           <div class="box-buscador">
-            <input type="text" class="input-buscador" placeholder="Buscador" />
+            <input
+              type="text"
+              class="input-buscador"
+              placeholder="Buscador"
+              name="q"
+            />
             <i class="fa-solid fa-magnifying-glass icon-buscador"></i>
           </div>
           <button class="btn-buscador">Buscar</button>
@@ -90,6 +96,6 @@
     <main>
       <div class="contenedor-cards" id="contenedor-cards"></div>
     </main>
-    <script src="../main.js"></script>
+    <script src="../js/detail-obras.js" type="module"></script>
   </body>
 </html>
