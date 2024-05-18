@@ -14,7 +14,7 @@
 
 ## Entregable :white_check_mark:
 **Acceso a la página web del proyecto:**
-<a href="https://maurocarvajaldesousa.github.io/tpo_cac_c24163_equipo10/" target="_blank">Centro Salamone Saldungaray</a>
+<a href="https://centrosalamone-dev.netlify.app/" target="_blank">Centro Salamone Saldungaray</a>
 
 
 # Centro Salamone Saldungaray
