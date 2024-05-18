@@ -1,9 +1,154 @@
-/* Estilos para dispositivos de pantalla grande */
-@media screen and (min-width: 992px) {
-  /* Agrega estilos específicos para dispositivos de pantalla grande */
+:root {
+  --color-primary: #fbf8dd;
+  --color-secondary: #1e1e1e;
 }
 
-/* Estilos para dispositivos de pantalla extra grande */
-@media screen and (min-width: 1200px) {
-  /* Agrega estilos específicos para dispositivos de pantalla extra grande */
+/* SELECTOR UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial;
+}
+
+@media (min-width: 360px) and (max-width: 820px) {
+  .header {
+    display: none;
+  }
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner-img {
+    background-size: none;
+    width: 100vw;
+    height: 120px;
+  }
+
+  .banner-items {
+    height: 100px;
+  }
+
+  .banner-title {
+    display: none;
+  }
+
+  .wrapper {
+    top: 22%;
+    left: 53%;
+  }
+
+  .banner-btn {
+    width: 110px;
+    height: 42px;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
+
+  .title-obra,
+  .subtitle-obra {
+    font-size: 1.5rem;
+  }
+
+  .obras {
+    display: block;
+  }
+
+  .obra-map {
+    width: 250px;
+    margin-bottom: 10px;
+  }
+
+  .title-bio {
+    font-size: 2rem;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .container-bio {
+    flex-direction: column;
+  }
+
+  .autor-title {
+    text-align: center;
+  }
+
+  .ocupacion-title {
+    text-align: center;
+  }
+
+  .container-parrafo {
+    /* width: 80%; */
+    text-align: justify;
+    padding: 20px;
+  }
+
+  .title-libro {
+    font-size: 1.5rem;
+    margin-top: 40px;
+  }
+
+  .subtitle-libro {
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+  }
+
+  .contenedor-libro {
+    flex-direction: column-reverse;
+  }
+
+  .parrafo-libro {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .btn-descarga {
+    padding: 15px;
+    width: 186px;
+  }
+
+  .contenedor-img-libro {
+    width: 230px;
+  }
+
+  .title-contacto {
+    font-size: 2rem;
+
+    text-align: center;
+  }
+
+  .subtitle-contacto {
+    padding: 0 20px 20px;
+    text-align: justify;
+  }
+
+  .form-contacto {
+    padding-top: 25px;
+    margin: auto;
+  }
+
+  .form-group {
+    padding: 5px 0;
+  }
+
+  .container-fn-tl {
+    gap: 11px;
+  }
+
+  .group-tel {
+    position: relative;
+    width: 45%;
+    top: 20px;
+  }
+
+  .btn-contact {
+    margin: 20px 0;
+  }
+
+  .footer .items-contacto {
+    display: none;
+  }
+
+  .container-footer {
+    gap: 80px;
+  }
 }
