@@ -68,6 +68,7 @@
     "nombre": "Cementerio de Azul",
     "date": "1938",
     "imagen": "/img/obras/obra_09.png",
+    "ubicacion": "centro",
     "coordenadas": "https://maps.app.goo.gl/ccHhBgXSPfaXVtPE9"
   },
   {
