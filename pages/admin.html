@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      form {
+        max-width: 400px;
+        margin-inline: auto;
+        padding: 0.5rem 1rem 2rem;
+      }
+
+      .campo {
+        margin-bottom: 1rem;
+
+        label {
+          display: block;
+          margin-bottom: 0.25rem;
+        }
+
+        input,
+        select,
+        button {
+          width: 100%;
+          padding: 0.5rem 0.5rem;
+          border-radius: 0.5rem;
+          border: 1px solid gray;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" id="form-create-obra">
+      <h1>Crear obra</h1>
+
+      <div class="campo">
+        <label for="descripcion"> Descripción </label>
+        <input
+          type="text"
+          name="descripcion"
+          id="descripcion"
+          required
+          required
+        />
+      </div>
+
+      <div class="campo">
+        <label for="anio"> Año </label>
+        <input type="number" name="anio" id="anio" required />
+      </div>
+
+      <div class="campo">
+        <label for="partido"> Partido </label>
+        <input type="text" name="partido" id="partido" required />
+      </div>
+
+      <div class="campo">
+        <label for="localidad"> Localidad </label>
+        <input type="text" name="localidad" id="localidad" required />
+      </div>
+
+      <div class="campo">
+        <label for="latitud"> Latitud </label>
+        <input
+          type="number"
+          name="latitud"
+          id="latitud"
+          required
+          min="-90"
+          max="90"
+        />
+      </div>
+
+      <div class="campo">
+        <label for="longitud"> Longitud </label>
+        <input
+          type="text"
+          name="longitud"
+          id="longitud"
+          required
+          min="-180"
+          max="180"
+        />
+      </div>
+
+      <div class="campo">
+        <label for="gmaps"> Enlace a Google Maps </label>
+        <input type="text" name="gmaps" id="gmaps" required />
+      </div>
+
+      <div class="campo">
+        <label for="imagen"> URL de imagen </label>
+        <input type="text" name="imagen" id="imagen" required />
+      </div>
+
+      <div class="campo">
+        <label for="rutas"> Ruta </label>
+        <select name="ruta" id="rutas" required>
+          <option value="" disabled selected>Elige una ruta</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="categoria"> Categoría</label>
+        <select name="categoria" id="categoria" required>
+          <option value="" disabled selected>Elige una categoria</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <label for="estado"> Estado</label>
+        <select name="estado" id="estado" required>
+          <option value="" disabled selected>Elige un Estado</option>
+          <option value="1">Activado</option>
+          <option value="0">Desactivado</option>
+        </select>
+      </div>
+
+      <div class="campo">
+        <button type="submit">Crear Obra</button>
+      </div>
+    </form>
+
+    <script type="module" src="../js/admin.js"></script>
+  </body>
+</html>
