@@ -3,40 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Enriqueta:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/style-admin.css" />
     <title>Admin</title>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-
-      form {
-        max-width: 400px;
-        margin-inline: auto;
-        padding: 0.5rem 1rem 2rem;
-      }
-
-      .campo {
-        margin-bottom: 1rem;
-
-        label {
-          display: block;
-          margin-bottom: 0.25rem;
-        }
-
-        input,
-        select,
-        button {
-          width: 100%;
-          padding: 0.5rem 0.5rem;
-          border-radius: 0.5rem;
-          border: 1px solid gray;
-        }
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/d669232c7f.js"
+      crossorigin="anonymous"
+    ></script>
+    
   </head>
-  <body>
-    <form action="" id="form-create-obra">
-      <h1>Crear obra</h1>
+  <body class="bg-admin">
+    <form class="form-admin" action="" id="form-create-obra">
+      <h1 class="title-form-admin">Crear obra</h1>
 
       <div class="campo">
         <label for="descripcion"> Descripción </label>
@@ -51,7 +33,7 @@
 
       <div class="campo">
         <label for="anio"> Año </label>
-        <input type="number" name="anio" id="anio" required />
+        <input type="number" name="anio" id="anio" max="2030" required />
       </div>
 
       <div class="campo">
@@ -67,13 +49,15 @@
       <div class="campo">
         <label for="latitud"> Latitud </label>
         <input
-          type="number"
+          type="text"
           name="latitud"
           id="latitud"
           required
-          min="-90"
-          max="90"
+          maxlength="10"
+          pattern="^-?\d{1,2}(\.\d{1,6})?$"
+          title="Se acepta desde -90.000000 hasta 90.000000 (máximo 6 decimales)"
         />
+        
       </div>
 
       <div class="campo">
@@ -83,9 +67,11 @@
           name="longitud"
           id="longitud"
           required
-          min="-180"
-          max="180"
+          maxlength="11"
+          pattern="^-?\d{1,3}(\.\d{1,6})?$"
+          title="Se acepta desde -180.000000 hasta 180.000000 (máximo 6 decimales)"
         />
+        
       </div>
 
       <div class="campo">
@@ -122,10 +108,67 @@
       </div>
 
       <div class="campo">
-        <button type="submit">Crear Obra</button>
+        <button class="btn-create">Crear Obra</button>
       </div>
     </form>
-
+    <footer class="footer">
+      <div class="container-footer contenedor">
+        <div class="social-media">
+          <div class="container-img-footer"><img src="../img/logo.jpeg" alt="logo" /></li></div>
+          <ul class="items-social-media">
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-facebook"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-instagram"
+                  
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-linkedin"
+                 
+                ></i
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><i
+                  class="fa-brands fa-square-x-twitter"
+                  
+                 
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-contact">
+          <ul class="items-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.html">Obras</a></li>
+            <li><a href="../index.html">Contacto</a></li>
+          </ul>
+          <ul class="items-contacto">
+            <li>
+              <i class="fa-solid fa-envelope fa-bounce"></i>
+              <a href="mailto:centrosalamonesaldungaray@gmail.com">centrosalamonesaldungaray@gmail.com</a>
+            </li>
+            <li><a href=""></a>Politicas de privacidad</li>
+            <li><a href=""></a>Copyright 2024</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="module" src="../js/admin.js"></script>
   </body>
 </html>

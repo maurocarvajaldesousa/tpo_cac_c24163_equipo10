@@ -85,11 +85,19 @@ formEl.addEventListener("submit", (event) => {
     .then((response) => response.json())
     .then((data) => {
       console.log("Success:", data);
-      alert("Se registro la obra con exito");
+      Swal.fire({
+        title: "Creaste una obra!",
+        text: "You clicked the button!",
+        icon: "success",
+      });
       formEl.reset();
     })
     .catch((error) => {
       console.error("Error:", error);
-      alert("No se pudo registrar");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Algo salió mal",
+      });
     });
 });
