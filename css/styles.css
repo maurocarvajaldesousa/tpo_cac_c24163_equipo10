@@ -19,6 +19,10 @@ body {
   background-color: #1e1e1e;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
 .contenedor {
   max-width: 1440px;
   margin-inline: auto;
@@ -120,6 +124,7 @@ body {
   color: black;
   font-weight: 700;
   font-family: Montserrat;
+  margin-bottom: 1rem;
   /* margin: 10px; */
 }
 
@@ -128,16 +133,10 @@ body {
   margin: auto;
   width: 30vw;
   text-align: center;
+
 }
 /* Comienza aqui */
-.wrapper {
-  position: absolute;
-  top: 55%;
-  left: 85%;
-  transform: translate(-50%, -50%);
-  width: fit-content;
-  height: auto;
-}
+
 .banner-btn {
   width: 200px;
   height: 70px;
@@ -567,21 +566,15 @@ body {
     padding-bottom: 3px;
   }
 
-  .items-nav li a:hover {
+  .items-nav li a:hover, .items-contacto li:hover {
     border-bottom: solid 3px var(--color-secondary);
     color: var(--color-secondary);
   }
 
-  .items-contacto li {
+  .items-contacto li a, .items-contacto li {
     text-decoration: none;
     list-style: none;
     color: var(--color-secondary);
   }
 }
 
-/* Estilos para dispositivos de pantalla pequeña */
-@media (min-width: 1280px) and (max-width: 1730px) {
-  .wrapper {
-    top: 72%;
-  }
-}

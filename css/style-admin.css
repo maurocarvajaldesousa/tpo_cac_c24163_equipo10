@@ -1,0 +1,62 @@
+:root {
+  --color-primary: #fbf8dd;
+  --color-secondary: #1e1e1e;
+  font-family: Montserrat, Arial;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-admin {
+  background-color: black;
+  color: azure;
+}
+
+.form-admin {
+  max-width: 400px;
+  margin-inline: auto;
+  padding: 0.5rem 1rem 2rem;
+
+  .title-form-admin {
+    text-align: center;
+    padding: 30px;
+    color: var(--color-primary);
+    font-size: 2.5rem;
+  }
+}
+
+.campo {
+  border: none;
+  outline: none;
+  margin-bottom: 1rem;
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  select,
+  button {
+    width: 100%;
+    padding: 0.5rem 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid gray;
+  }
+}
+
+.btn-create {
+  background-color: var(--color-primary);
+  color: black;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.footer{
+  background-color: var(--color-primary);
+  
+}
